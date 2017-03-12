@@ -1,0 +1,506 @@
+/* Fonts */
+
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600');
+@font-face {
+	font-family: 'icomoon-digestofhomes';
+	src: url('fonts/icomoon-digestofhomes.eot?hhpsns');
+	src: url('fonts/icomoon-digestofhomes.eot?hhpsns#iefix') format('embedded-opentype'), url('fonts/icomoon-digestofhomes.ttf?hhpsns') format('truetype'), url('fonts/icomoon-digestofhomes.woff?hhpsns') format('woff'), url('fonts/icomoon-digestofhomes.svg?hhpsns#icomoon-digestofhomes') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+[class^="icon-"],
+[class*=" icon-"] {
+	/* use !important to prevent issues with browser extensions that change fonts */
+	font-family: 'icomoon-digestofhomes' !important;
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+	/* Better Font Rendering =========== */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.icon-home3:before {
+	content: "\e902";
+}
+
+.icon-book:before {
+	content: "\e91f";
+}
+
+.icon-phone:before {
+	content: "\e942";
+}
+
+.icon-location:before {
+	content: "\e947";
+}
+
+.icon-user:before {
+	content: "\e971";
+}
+
+.icon-facebook:before {
+	content: "\ea90";
+}
+
+.icon-twitter:before {
+	content: "\ea96";
+}
+
+
+/* General */
+
+html{
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+body {
+	background: url('../img/cream_pixels.png');
+	color: #000;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: 'Source Sans Pro', sans-serif;
+	font-weight: 700;
+}
+
+a, a:visited{
+	color: #8c181b;
+	-webkit-transition: all 0.2s ease-out;
+	-moz-transition: all 0.2s ease-out;
+	transition: all 0.2s ease-out;
+}
+a:hover, a:focus, a:active{
+	color: #500000;
+}
+
+.btn{
+	border: none;
+	box-shadow: 0 1px 0 #000;
+	text-shadow: 0 1px 0 #222;
+	text-transform: uppercase;
+	font-weight: bold;
+	font-size: 20px;
+	border-radius: 5px;
+	font-family: 'Source Sans Pro', sans-serif;
+	line-height: 1em;
+	padding: 8px 25px 5px;
+}
+.btn .btn-secondaryText{
+	display: block;
+	text-shadow: none;
+	font-size: 14px;
+	color: #000;
+	text-transform: lowercase;
+	font-weight: normal;
+	margin-top: -5px;
+}
+.btn-default{
+	background: #717171;
+}
+.btn-primary{
+	background: #8c181b;
+}
+.btn-primary:hover, .btn-primary:focus, .btn-primary:active{
+	background: #500000;
+}
+
+
+/* HEADER */
+
+header {
+	padding: 15px 0;
+}
+
+header .logo {
+	text-align: center;
+}
+
+@media all and (min-width: 768px){
+	header .logo{
+		text-align: left;
+		margin-left: -10px;
+	}
+}
+
+
+/* Main Navigation */
+
+.navbar-default {
+	background: #8d181b;
+	border: none;
+}
+
+@media all and (min-width:768px) {
+	.navbar-default {
+		background: none;
+	}
+}
+
+@media all and (min-width: 992px){
+	.navbar-default{
+		margin-top: 35px;
+	}
+}
+
+.navbar-default .navbar-toggle {
+	border-color: #690003;
+	background-color: #690003;
+}
+
+.navbar-default .navbar-toggle:focus,
+.navbar-default .navbar-toggle:hover {
+	background-color: #9e3033;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+	background-color: #fff;
+}
+
+.navbar-default .navbar-collapse {
+	padding: 0;
+}
+
+.navbar-default .navbar-collapse, .navbar-default .navbar-form {
+	border-color: #690003;
+}
+
+@media all and (min-width:768px) and (max-width:992px){
+	.navbar-default .navbar-collapse {
+		text-align: center;
+	}
+}
+
+.navbar-default .navbar-nav {
+	margin: 0;
+}
+
+@media all and (min-width: 768px){
+	.navbar-default .navbar-nav{
+		float: right;
+	}
+}
+
+@media all and (min-width:768px) and (max-width:992px){
+	.navbar-default .navbar-nav {
+		display: inline-block;
+		float: none;
+	}
+}
+
+.navbar-default .navbar-nav > li > a {
+	padding: 10px;
+	color: #fff;
+	border-top: 1px solid #9e3033;
+	font-weight: bold;
+}
+
+@media all and (min-width:768px) {
+	.navbar-default .navbar-nav > li > a {
+		color: #000;
+		border-top: none;
+	}
+}
+
+.navbar-default .navbar-nav > li > a:hover {
+	color: #5a5a5a;
+	background: none;
+}
+
+.navbar-default .navbar-nav > li.active > a {
+	/*	border-bottom: 1px solid #8d181b;*/
+	color: #000;
+	background: #9e3033;
+}
+
+@media all and (min-width:768px) {
+	.navbar-default .navbar-nav > li.active > a {
+		border-bottom: 1px solid #8d181b;
+		color: #5a5a5a;
+		background: none;
+	}
+}
+
+
+/* HERO */
+
+.hero {
+	border-top: 8px solid #004283;
+	border-bottom: 8px solid #004283;
+	padding: 50px 0;
+	text-align: center;
+	position: relative;
+	overflow: hidden;
+}
+
+.hero #background{
+	background: url('../img/hero-bg.jpg');
+	position: absolute;
+}
+
+.hero .issue h2 {
+	font-size: 87px;
+	margin: 0 0 10px;
+	color: #fff;
+	text-shadow: 0 0 1px #000;
+}
+
+.hero .issue h2 span {
+	font-weight: 300;
+}
+
+.hero .issue img {
+	max-width: 185px;
+	margin: 0 0 20px;
+	box-shadow: 0 1px 1px #000;
+}
+
+.hero .btn-primary{
+	font-weight: 300;
+	padding: 13px 20px;
+}
+
+.hero .btn-primary span{
+	font-size: 16px;
+	padding-right: 5px;
+}
+
+.hero .btn-default{
+	font-size: 14px;
+	padding: 10px 15px;
+	color: #fff;
+	font-weight: 300;
+	text-transform: capitalize;
+	letter-spacing: .5px;
+}
+
+.hero .btn-default:hover{
+	background: #444;
+}
+
+@media all and (min-width:768px) {
+	.hero .issue .cover {
+		text-align: right;
+	}
+	.hero .issue .links{
+		text-align: left;
+	}
+}
+
+
+/* MAIN CONTENT */
+.mainContent{
+	margin: 20px 0 0;
+	text-align: center;
+/*	overflow: hidden;*/
+}
+
+@media all and (min-width: 992px){
+	.mainContent{
+		text-align: left;
+	}
+}
+
+.mainContent h1{
+	margin-bottom: 50px
+}
+.mainContent .row > div:first-child p{
+	margin-right: 50px;
+}
+
+/* Magazine Cover Stack */
+.magCovers{
+	position:relative;
+	z-index:1;
+	height: 300px;
+	margin-top: 20px
+}
+.magCovers-link{
+	display: block;
+}
+.magCovers img{
+	position:absolute;
+	-moz-box-shadow:1px 1px 10px #000;
+	-webkit-box-shadow:1px 1px 10px #000;
+	box-shadow:0px 2px 1px #000;
+	height: auto;
+	margin: auto;
+}
+.magCovers-thisMonth{
+	transform: rotate(0deg);
+	z-index: 3;
+	top: 10px;
+	right: 0;
+	left: 0;
+}
+.magCovers-lastMonth{
+	transform: rotate(15deg);
+	opacity: .75;
+	z-index: 2;
+	top:30px;
+	right: -55px;
+}
+.magCovers-pastMonth{
+	transform: rotate(-15deg);
+	opacity: .75;
+	z-index: 1;
+	top:30px;
+	left: -55px;
+}
+
+/* CALLOUTS */
+.callouts-box{
+	background: #d1dde6;
+	border-radius: 10px;
+	border-bottom: 1px solid #999d9e;
+	text-align: center;
+	position: relative;
+	z-index: 2;
+	padding-bottom: 50px;
+	margin-bottom: 15px;
+}
+.callouts-box h2{
+	font-weight: normal;
+	font-size: 25px;
+	border-bottom: 1px dashed #333;
+	padding-bottom: 15px;
+	margin-bottom: 15px;
+}
+.callouts-box p{
+	padding: 0 15px;
+}
+.callouts-box-icons{
+	font-size: 25px;
+	background: #004382;
+	border-radius: 50%;
+	padding: 15px;
+	color: #fff;
+	font-weight: normal;
+	text-shadow: 0 1px 0 #000;
+	margin-top: 55px;
+	display: inline-block;
+	border-bottom: 1px solid #000;
+}
+
+/* REALTORS */
+.realtors{
+	background: #d1dde6;
+	margin: 50px 0;
+	padding: 25px 0;
+	text-align: center
+}
+
+.realtorLogos{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.realtorLogos a{
+	width: 23%;
+	background: #fff;
+	border-radius: 5px;
+	padding: 5px;
+	margin: 10px 1%;
+	height: 100px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.realtorLogos a img{
+	max-width: 100%;
+	height: auto;
+}
+
+/* ADVERTISE */
+.advertise{
+	text-align: center;
+	background: url('../img/hero-bg.jpg') no-repeat center;
+	position: relative;
+	padding: 70px 0;
+	border-top: 1px solid #004382;
+	border-bottom: 1px solid #004382;
+	background-attachment: fixed;
+}
+.advertise:after{
+	content: '';
+	background: #333;
+	position: absolute;
+	margin: auto;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	opacity: .5;
+	z-index: 0;
+}
+.advertise .container{
+	position: relative;
+	z-index: 1;
+}
+.advertise h2{
+	color: #fff;
+}
+
+/* FOOTER */
+footer{
+	background: #d1dde6;
+	font-size: 12px;
+}
+footer .footerInfo{
+	padding: 10px 0;
+}
+footer h3{
+	border-bottom: 1px dashed #a5aeb5;
+	padding: 0 0 5px 0;
+	font-size: 20px;
+}
+footer .icon-facebook {
+	background: #00468e;
+	color: #fff;
+	padding: 5px;
+	border-radius: 3px;
+}
+footer .icon-facebook:hover {
+	text-decoration: none;
+	background: #00356b;
+}
+footer .footerInfo .cover {
+	position: relative;
+	overflow: hidden;
+	height: 120px;
+}
+footer .footerInfo .cover img {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+/* footerbar */
+footer .footerBar{
+	background: #004382;
+}
+
+@media all and (min-width: 480px){
+	footer .footerBar .row div:last-child{
+		text-align: right;
+	}
+}
+
+footer .footerBar p{
+	margin: 10px 0;
+}
+
+
