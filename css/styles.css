@@ -85,7 +85,7 @@ a:hover, a:focus, a:active{
 	color: #500000;
 }
 
-.btn{
+.btn, .btn:visited{
 	border: none;
 	box-shadow: 0 1px 0 #000;
 	text-shadow: 0 1px 0 #222;
@@ -96,8 +96,9 @@ a:hover, a:focus, a:active{
 	font-family: 'Source Sans Pro', sans-serif;
 	line-height: 1em;
 	padding: 8px 25px 5px;
+	color: #fff;
 }
-.btn .btn-secondaryText{
+.btn .btn-secondaryText, .btn .btn-secondaryText:visited{
 	display: block;
 	text-shadow: none;
 	font-size: 14px;
@@ -120,7 +121,9 @@ a:hover, a:focus, a:active{
 /* HEADER */
 
 header {
-	padding: 15px 0;
+    background: #fff;
+    padding: 15px 0;
+    border-bottom: 8px solid #004283;
 }
 
 header .logo {
@@ -236,17 +239,12 @@ header .logo {
 /* HERO */
 
 .hero {
-	border-top: 8px solid #004283;
 	border-bottom: 8px solid #004283;
 	padding: 50px 0;
 	text-align: center;
 	position: relative;
 	overflow: hidden;
-}
-
-.hero #background{
-	background: url('../img/hero-bg.jpg');
-	position: absolute;
+    background: url(../img/hero-bg.jpg) no-repeat center;
 }
 
 .hero .issue h2 {
@@ -457,6 +455,7 @@ header .logo {
 footer{
 	background: #d1dde6;
 	font-size: 12px;
+	margin-top: 45px;
 }
 footer .footerInfo{
 	padding: 10px 0;
