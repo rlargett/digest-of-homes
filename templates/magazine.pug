@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+- var page = 'Online Magazine'
+
+<head>
+	- var pageTitle = page + ' | Digest of Homes'
+	include includes/_head.pug
+</head>
+
+<body>
+
+	<header>
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-12 col-md-4 logo">
+					include includes/_logo.pug
+				</div>
+				<div class="col-xs-12 col-md-8">
+					<nav class="navbar navbar-default">
+				
+						<div class="navbar-header">
+							<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+								<span class="sr-only">Toggle navigation</span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+							</button>
+						</div>
+				
+						<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+				
+							<ul class="nav navbar-nav">
+								-var magazineActive = 'active'
+								include includes/_nav.pug
+							</ul>
+				
+						</div>
+					</nav>
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<div class="mainContent">
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-12">
+					h1 #{page}
+					<div data-configid="20963975/47051280" style="width:100%; height:500px;" class="issuuembed"></div>
+					<script type="text/javascript" src="//e.issuu.com/embed.js" async="true"></script>
+					<br>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<footer>
+	include includes/_footer.pug
+	</footer>
+
+	include includes/_scripts.pug
+
+</body>
+
+</html>

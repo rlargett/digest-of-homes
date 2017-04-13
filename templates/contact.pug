@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+- var page = 'Contact Us'
+
+<head>
+	- var pageTitle = page + ' | Digest of Homes'
+	include includes/_head.pug
+</head>
+
+<body>
+
+	<header>
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-12 col-md-4 logo">
+					include includes/_logo.pug
+				</div>
+				<div class="col-xs-12 col-md-8">
+					<nav class="navbar navbar-default">
+				
+						<div class="navbar-header">
+							<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+								<span class="sr-only">Toggle navigation</span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+							</button>
+						</div>
+				
+						<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+				
+							<ul class="nav navbar-nav">
+								-var contactActive = 'active'
+								include includes/_nav.pug
+							</ul>
+				
+						</div>
+					</nav>
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<div class="mainContent">
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-12">
+					h1 #{page}
+					<p>You may contact us at:</p>
+					<p>352-572-6742 Phone<br>352-304-5963 Fax</p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<footer>
+	include includes/_footer.pug
+	</footer>
+
+	include includes/_scripts.pug
+
+</body>
+
+</html>
